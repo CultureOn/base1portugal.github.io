@@ -8,3 +8,5 @@ Landing page da Base 1. Site estático (HTML + CSS), publicado com GitHub Pages.
 - `assets/fonts/` · Space Mono (SIL Open Font License), alojada no próprio site para não haver pedidos a servidores externos
 
 Sem cookies, sem formulários, sem scripts de terceiros.
+
+Para editar o site com o Claude, ver `CLAUDE.md`: estrutura da página, identidade, regras de texto e como publicar.
