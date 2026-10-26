@@ -20,7 +20,7 @@ Este ficheiro é público, como o resto do repositório e do site. Não pôr aqu
 1. Topo (fundo preto), com menu Caso · Método · Equipa · Contacto, e imagem aérea do Ferragudo Bay.
 2. 01 · O problema.
 3. Quanto vale um mês (fundo preto). Exemplos financeiros ilustrativos, com as hipóteses escritas.
-4. 02 · Caso Ferragudo Bay (`#caso`): abertura, rooftop, ponto de partida, produto, investigação, conceito, faixa com o padrão de cordas, ativos de venda e resultado.
+4. 02 · Caso Ferragudo Bay (`#caso`): abertura, rooftop, ponto de partida, produto, investigação, conceito, ativos de venda e resultado.
 5. Convite ao contacto, logo a seguir ao caso.
 6. 03 · Como trabalhamos (`#metodo`).
 7. 04 · Ao lado de quem desenha e de quem vende.
