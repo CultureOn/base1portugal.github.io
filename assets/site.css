@@ -166,7 +166,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 
 /* ---------- full-bleed images ---------- */
 .bleed img { width: 100%; object-fit: cover; }
-.bleed--tall img { height: clamp(300px, 52vw, 800px); object-position: 50% 62%; }
+.bleed--tall img { height: clamp(420px, 52vw, 800px); object-position: 50% 62%; }
 .bleed--mid img { height: clamp(300px, 50vw, 760px); object-position: 50% 55%; }
 .bleed--strip img { height: clamp(120px, 14vw, 210px); }
 .caption-bar {
