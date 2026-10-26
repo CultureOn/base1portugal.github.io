@@ -48,6 +48,7 @@ Este ficheiro é público, como o resto do repositório e do site. Não pôr aqu
 
 - Pode haver duas pessoas a editar. Começar sempre da versão mais recente do `main`.
 - Alterações pequenas, um commit por alteração, com mensagem clara em português.
+- Sempre que mudar o `assets/site.css`, atualizar o `?v=` no `<link>` do `index.html` (por exemplo, a data do dia). Sem isso, os browsers podem mostrar o HTML novo com o CSS antigo durante uns minutos.
 - Ver a página a 1440 px e a 390 px de largura antes de dar por terminado: nada pode sair do ecrã na horizontal e o texto não pode ficar cortado.
 - Imagens novas em JPG, até cerca de 2000 px de largura e abaixo de cerca de 400 KB, sempre com `width`, `height` e `alt` no `<img>`. Por baixo da primeira dobra, `loading="lazy"`.
 - Manter `<meta name="robots" content="noindex">` enquanto o site estiver no endereço github.io.
