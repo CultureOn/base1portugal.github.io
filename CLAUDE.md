@@ -31,7 +31,7 @@ Este ficheiro é público, como o resto do repositório e do site. Não pôr aqu
 
 - Letra: Space Mono. Títulos em caixa alta (classe `.caps`).
 - Cores da Base 1: fundo `--ground` #EEEEEE, texto `--ink` #111111, laranja `--orange` #E35436, preto `--night` #0E0E0E.
-- A secção do caso usa só a paleta do Ferragudo Bay (`--fb-stone`, `--fb-navy`, `--fb-clay`, `--fb-mist`, `--fb-sky`) e não leva o laranja da Base 1. Esta troca de paleta é intencional: mostra que a Base 1 faz a marca do cliente e não a sua. Manter. A abertura do caso tem fundo `--fb-navy`, com texto e logótipo a branco (`fb-logo-white.png`).
+- A secção do caso usa só a paleta do Ferragudo Bay (`--fb-stone`, `--fb-navy`, `--fb-clay`, `--fb-mist`, `--fb-sky`) e não leva o laranja da Base 1. Esta troca de paleta é intencional: mostra que a Base 1 faz a marca do cliente e não a sua. Manter. A abertura do caso tem fundo `--fb-navy`, com texto e logótipo a branco (`fb-logo-white.svg`, versão simplificada do logótipo).
 - Tudo alinhado à esquerda. Sem ícones, gradientes, sombras ou cantos arredondados (a única exceção é o arco da fotografia da vila). O texto não anima.
 
 ## Regras de texto
