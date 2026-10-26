@@ -227,6 +227,8 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 .pieces .wide { grid-column: 1 / -1; }
 .pieces img { width: 100%; object-fit: cover; }
 .pieces .r169 img { aspect-ratio: 16 / 9; }
+.pieces .shot img { object-position: 50% 0; }
+.pieces video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #000; }
 .pieces figcaption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; }
 .case-meta { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 32px; border-top: 1px solid var(--fb-navy); padding-top: 16px; line-height: 1.7; }
 .pieces a { display: block; }
