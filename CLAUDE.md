@@ -10,6 +10,7 @@ Este ficheiro é público, como o resto do repositório e do site. Não pôr aqu
 - `assets/site.css`: estilos. Cores, tamanhos de letra e espaçamentos estão como variáveis no `:root`, no topo do ficheiro.
 - `assets/img/`: imagens e logótipos (`base1-logo-white.png`, `base1-logo-black.png`, `base1-logo-orange.png`).
 - `assets/fonts/`: Space Mono alojada no próprio site. Não carregar do Google Fonts, para o site continuar sem pedidos a terceiros e sem banner de cookies.
+- `assets/video/ferragudo-bay-teaser.mp4`: filme do caso (1 min, 1080p, cerca de 22 MB), com capa em `assets/img/fb-filme.jpg`. Vídeos novos comprimidos em H.264 com `+faststart`, bem abaixo dos 100 MB que o GitHub aceita por ficheiro. Sem YouTube, Vimeo ou Drive embutidos.
 - `assets/img/og.jpg`: imagem de partilha (1200 × 630) para WhatsApp e LinkedIn.
 - `favicon-32.png`, `apple-touch-icon.png`.
 - `.nojekyll`: não apagar.
