@@ -99,6 +99,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 .band-mist { background: var(--fb-mist); color: var(--fb-navy); }
 .band-clay { background: var(--fb-clay); color: #FFFFFF; }
 .band-sky { background: var(--fb-sky); color: var(--fb-navy); }
+.band-navy { background: var(--fb-navy); color: #FFFFFF; }
 
 /* ---------- type ---------- */
 .label {
@@ -127,6 +128,8 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 .band-stone .sec-head { border-color: var(--fb-navy); }
 .band-stone .sec-head .label { color: var(--fb-navy); }
 .band-stone .sec-head .num { color: var(--fb-clay); }
+.band-navy .sec-head { border-color: #FFFFFF; }
+.band-navy .sec-head .label, .band-navy .sec-head .num { color: #FFFFFF; }
 .band-orange .sec-head { border-color: var(--ink); }
 .band-orange .sec-head .label,
 .band-orange .sec-head .num { color: var(--ink); }
@@ -190,7 +193,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 /* ---------- case ---------- */
 .case-open { align-items: center; }
 .case-open .text { flex: 1 1 520px; display: flex; flex-direction: column; gap: clamp(20px, 2.5vw, 32px); }
-.case-open .mark { flex: 0 1 400px; background: var(--fb-mist); padding: clamp(40px, 5vw, 72px); display: flex; align-items: center; justify-content: center; }
+.case-open .mark { flex: 0 1 400px; padding: clamp(40px, 5vw, 72px); display: flex; align-items: center; justify-content: center; }
 .case-open .mark img { width: 100%; max-width: 280px; }
 
 .before-after { align-items: flex-start; }
