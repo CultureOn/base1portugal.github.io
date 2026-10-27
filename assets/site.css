@@ -219,7 +219,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 .concept .text { flex: 1.6 1 520px; display: flex; flex-direction: column; gap: clamp(28px, 3.5vw, 48px); }
 .concept .line { font-size: clamp(30px, 4.6vw, 68px); line-height: 1.06; }
 .concept .note { display: flex; flex-direction: column; gap: 12px; max-width: 52ch; border-top: 1px solid var(--fb-navy); padding-top: 18px; }
-.concept .logo { flex: 1 1 280px; max-width: 360px; margin-inline: auto; }
+.concept .logo { flex: 1 1 280px; max-width: 300px; margin-inline: auto; }
 
 .built-head { align-items: flex-end; gap: 24px clamp(40px, 6vw, 96px); }
 .built-head h3 { flex: 1.3 1 480px; }
