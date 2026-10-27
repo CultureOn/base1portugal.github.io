@@ -212,8 +212,8 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 .fact .key { flex: 0 0 200px; font-size: clamp(28px, 3vw, 40px); line-height: 1.05; color: var(--fb-stone); text-transform: uppercase; }
 .fact p { flex: 1 1 300px; min-width: 0; max-width: 52ch; font-size: var(--t-body); line-height: 1.7; }
 .arch { flex: 1 1 300px; max-width: 420px; margin-inline: auto; }
-.arch .frame { border: 1px solid var(--fb-stone); border-radius: 999px 999px 0 0; padding: clamp(10px, 1.2vw, 16px) clamp(10px, 1.2vw, 16px) 0; }
-.arch img { width: 100%; aspect-ratio: 3 / 5; object-fit: cover; object-position: 30% 50%; border-radius: 999px 999px 0 0; }
+.arch .frame { border: 1px solid var(--fb-stone); border-radius: 999px 999px 0 0; padding: clamp(10px, 1.2vw, 16px); }
+.arch img { display: block; width: 100%; aspect-ratio: 2 / 3; object-fit: cover; object-position: 50% 50%; border-radius: 999px 999px 0 0; }
 
 .concept { align-items: center; }
 .concept .text { flex: 1.6 1 520px; display: flex; flex-direction: column; gap: clamp(28px, 3.5vw, 48px); }
