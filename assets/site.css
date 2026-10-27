@@ -282,6 +282,8 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 .contact-lines { flex: 1 1 420px; display: flex; flex-direction: column; gap: 6px; font-size: clamp(18px, 2.3vw, 32px); line-height: 1.3; overflow-wrap: anywhere; }
 .contact-lines a { text-decoration: none; }
 .contact-lines a:hover { text-decoration: underline; }
+.to-top { align-self: flex-start; color: var(--ink); text-decoration: none; border: 1px solid var(--ink); padding: 14px 20px; margin-top: clamp(8px, 2vw, 24px); }
+.to-top:hover { background: var(--ink); color: var(--orange); }
 
 .foot .wrap {
   display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;
