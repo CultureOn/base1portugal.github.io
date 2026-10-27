@@ -9,7 +9,7 @@ Este ficheiro é público, como o resto do repositório e do site. Não pôr aqu
 - `index.html`: todo o conteúdo e a estrutura da página.
 - `assets/site.css`: estilos. Cores, tamanhos de letra e espaçamentos estão como variáveis no `:root`, no topo do ficheiro.
 - `assets/img/`: imagens e logótipos (`base1-logo-white.png`, `base1-logo-black.png`, `base1-logo-orange.png`).
-- `assets/fonts/`: Space Mono alojada no próprio site. Não carregar do Google Fonts, para o site continuar sem pedidos a terceiros e sem banner de cookies.
+- `assets/fonts/`: Space Mono e DM Sans (400, 400 itálico, 500, 700) alojadas no próprio site. Não carregar do Google Fonts, para o site continuar sem pedidos a terceiros e sem banner de cookies.
 - `assets/video/ferragudo-bay-teaser.mp4`: filme do caso (1 min, 1080p, cerca de 22 MB), com capa em `assets/img/fb-filme.jpg`. Vídeos novos comprimidos em H.264 com `+faststart`, bem abaixo dos 100 MB que o GitHub aceita por ficheiro. Sem YouTube, Vimeo ou Drive embutidos.
 - `assets/img/og.jpg`: imagem de partilha (1200 × 630) para WhatsApp e LinkedIn.
 - `favicon-32.png`, `apple-touch-icon.png`.
@@ -29,7 +29,7 @@ Este ficheiro é público, como o resto do repositório e do site. Não pôr aqu
 
 ## Identidade
 
-- Letra: Space Mono. Títulos em caixa alta (classe `.caps`).
+- Letras: Space Mono nos títulos (caixa alta, classe `.caps`), etiquetas, números e contactos. DM Sans no corpo de texto e nos subtítulos. A lista de elementos em Space Mono está no `site.css`, logo antes de `.caps`.
 - Cores da Base 1: fundo `--ground` #EEEEEE, texto `--ink` #111111, laranja `--orange` #E35436, preto `--night` #0E0E0E.
 - A secção do caso usa só a paleta do Ferragudo Bay (`--fb-stone`, `--fb-navy`, `--fb-clay`, `--fb-mist`, `--fb-sky`) e não leva o laranja da Base 1. Esta troca de paleta é intencional: mostra que a Base 1 faz a marca do cliente e não a sua. Manter. A abertura do caso tem fundo `--fb-navy`, com texto e logótipo a branco (`fb-simbolo-white.svg`, só o símbolo).
 - Tudo alinhado à esquerda. Sem ícones, gradientes, sombras ou cantos arredondados (a única exceção é o arco da fotografia da vila). O texto não anima.
