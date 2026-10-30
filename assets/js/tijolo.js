@@ -113,7 +113,7 @@ function resize(){
   renderer.setPixelRatio(dpr);renderer.setSize(w,h,false);
   var W=Math.round(w*dpr),H=Math.round(h*dpr);rtColor.setSize(W,H);rtNorm.setSize(W,H);
   post.uniforms.px.value.set(1/W,1/H);
-  var half=2.85,a=w/h;
+  var half=2.9,a=w/h;
   if(a>=1){cam.left=-half*a;cam.right=half*a;cam.top=half;cam.bottom=-half;}
   else{cam.left=-half;cam.right=half;cam.top=half/a;cam.bottom=-half/a;}
   cam.updateProjectionMatrix();stripWidth();
