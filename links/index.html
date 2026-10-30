@@ -48,37 +48,6 @@ button.link{width:100%;background:none;border:0;font:inherit;cursor:pointer;text
 .hero .fallback svg{width:min(70vw,320px);height:auto}
 .hero.nogl canvas,.hero.nogl .hint{display:none}
 .hero.nogl .fallback{display:flex}
-
-/* Caso Ferragudo Bay: abre ao tocar. Usa a paleta do Ferragudo Bay, não o laranja da Base 1. */
-:root{--fb-stone:#F2ECE2;--fb-navy:#213B4F;--fb-clay:#A45F4C;--fb-mist:#C8D1D9;--fb-sky:#9CC3EA}
-details.case{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-details.case summary{list-style:none;cursor:pointer}
-details.case summary::-webkit-details-marker{display:none}
-details.case .a.open{display:none}
-details.case[open] .a.open{display:inline}
-details.case[open] .a.closed{display:none}
-.cb{color:var(--fb-navy);padding:4px 0 32px;display:flex;flex-direction:column;gap:28px}
-.cb img,.cb video{display:block;width:100%;height:auto;background:var(--fb-stone)}
-.cb .k{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--fb-clay);margin-bottom:8px;display:block}
-.cb h3,.cb .caps{font-family:"Space Mono",monospace;font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:18px;line-height:1.3}
-.cb p{font-size:15px;line-height:1.5}
-.cb .blk{background:var(--fb-stone);padding:22px 20px;display:flex;flex-direction:column;gap:16px}
-.cb .blk.mist{background:var(--fb-mist)}
-.cb .blk.sky{background:var(--fb-sky)}
-.cb .blk.clay{background:var(--fb-clay);color:#FFFFFF}
-.cb .blk.clay .k{color:#FFFFFF;opacity:.75}
-.cb .blk.navy{background:var(--fb-navy);color:#FFFFFF}
-.cb ul.recs{list-style:none;border-top:1px solid rgba(33,59,79,.25)}
-.cb ul.recs li{border-bottom:1px solid rgba(33,59,79,.25);padding:10px 0;font-size:15px}
-.cb .fact .key{font-family:"Space Mono",monospace;font-weight:700;font-size:22px;display:block;margin-bottom:4px}
-.cb .fact{border-top:1px solid rgba(255,255,255,.35);padding-top:12px}
-.cb figure{display:flex;flex-direction:column;gap:8px}
-.cb figcaption{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(33,59,79,.7);display:flex;justify-content:space-between;gap:12px}
-.cb figcaption a,.cb .more{color:var(--fb-navy)}
-.cb .big{font-family:"Space Mono",monospace;font-weight:700;font-size:44px;color:var(--fb-clay);line-height:1}
-.cb .meta{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(33,59,79,.65);line-height:1.7}
-.cb .more{font-family:"Space Mono",monospace;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-top:1px solid var(--fb-navy);padding-top:14px;display:flex;justify-content:space-between}
-.cb .logo img{background:none;width:60%;max-width:240px}
 </style>
 </head>
 <body>
@@ -104,88 +73,10 @@ details.case[open] .a.closed{display:none}
       <p class="label mono">Site</p>
       <ul>
         <li><a class="link" href="../"><span class="t">Ver o site</span><span class="a">↗</span></a></li>
+        <li><a class="link" href="../#caso"><span class="t">Caso Ferragudo Bay</span><span class="a">↗</span></a></li>
         <li><a class="link" href="../#metodo"><span class="t">Como trabalhamos</span><span class="a">↗</span></a></li>
         <li><a class="link" href="../#equipa"><span class="t">Equipa</span><span class="a">↗</span></a></li>
       </ul>
-    </section>
-
-    <section class="group">
-      <p class="label mono">Caso</p>
-      <details class="case">
-        <summary class="link"><span class="t">Caso Ferragudo Bay</span><span class="a closed">+</span><span class="a open">−</span></summary>
-        <div class="cb">
-          <img src="../assets/img/fb-rooftop.jpg" width="1280" height="853" loading="lazy" alt="Rooftop do Ferragudo Bay ao anoitecer, com o estuário e Portimão ao fundo">
-          <div class="blk navy">
-            <p>Ferragudo, concelho de Lagoa. 45 frações em primeira linha de água, à entrada da vila. Para a Rising Stone.</p>
-            <p class="caps">Onde Ferragudo se abre.</p>
-          </div>
-
-          <div class="blk">
-            <span class="k">Ponto de partida</span>
-            <h3>Um bom projeto. Faltava dizer porquê.</h3>
-            <div><span class="k">O que recebemos</span><p>Uma localização rara, à entrada da vila e em primeira linha de água. Arquitetura desenhada e renders de qualidade.</p></div>
-            <div><span class="k">O que faltava</span><p>Uma razão clara para o comprador escolher este projeto e não outro do mesmo troço de costa.</p></div>
-            <div><span class="k">O que ficou</span><p style="color:var(--fb-clay)">Uma posição própria no mercado, traduzida numa marca e numa apresentação comercial coerente.</p></div>
-          </div>
-          <img src="../assets/img/fb-jardim.jpg" width="960" height="1067" loading="lazy" alt="Fachada e jardim de uma das casas do Ferragudo Bay">
-
-          <div class="blk mist">
-            <span class="k" style="color:var(--fb-navy)">Produto</span>
-            <h3>Antes de o comunicar, trabalhámos o produto com o promotor.</h3>
-            <p>Neste segmento, quem compra avalia a casa e também a forma como o condomínio é gerido.</p>
-            <p>Propusemos quatro acrescentos ao projeto. A Rising Stone incorporou os quatro.</p>
-            <ul class="recs"><li>Receção</li><li>Escritório de gestão</li><li>Áreas de pessoal e manutenção</li><li>Porta direta para a praia do estuário</li></ul>
-          </div>
-
-          <div class="blk clay">
-            <span class="k">Investigação</span>
-            <h3>Fomos ao lugar antes de desenhar seja o que for.</h3>
-            <div class="fact"><span class="key">1883</span><p>O empreendimento ocupa o chão da Fábrica da Praia do Paraíso, que começou a laborar em novembro de 1883. É a mais antiga registada no levantamento académico das duas margens do Arade.</p></div>
-            <div class="fact"><span class="key">Passagem</span><p>O sítio chama-se Passagem. É o nome oficial do lugar, com código postal próprio, e não um nome inventado para a marca.</p></div>
-            <div class="fact"><span class="key">80 m</span><p>Da entrada do condomínio à praia do estuário são cerca de oitenta metros, sem nada construído pelo meio.</p></div>
-            <p class="caps">Nada disto estava no material que recebemos.</p>
-          </div>
-          <img src="../assets/img/ferragudo-vila.jpg" width="1000" height="1500" loading="lazy" alt="A vila de Ferragudo vista da outra margem do Arade, com a igreja no alto e palmeiras em primeiro plano">
-
-          <div class="blk sky">
-            <span class="k" style="color:var(--fb-navy)">Marca · O conceito: A Passagem</span>
-            <p class="caps">Um lugar de passagem. Uma casa para ficar.</p>
-            <p><strong>A Passagem dá o conceito. A fábrica dá-lhe a prova.</strong></p>
-            <p>O nome do lugar passou a estruturar tudo: a narrativa, a hierarquia dos argumentos e a ordem por que o projeto se apresenta a um comprador.</p>
-            <div class="logo"><img src="../assets/img/fb-logo-completo.svg" width="1880" height="1616" loading="lazy" alt="Logótipo Ferragudo Bay"></div>
-          </div>
-
-          <div>
-            <span class="k">Ativos de venda · Lançamento</span>
-            <h3>De uma decisão inicial a tudo o que o comprador vê.</h3>
-            <p style="margin-top:12px">Marca e sistema visual. Narrativa e argumentário. Website. Filme. Outdoors. Lançamento online. Materiais para a equipa comercial.</p>
-          </div>
-          <figure>
-            <video controls preload="none" playsinline width="1920" height="1080" poster="../assets/img/fb-filme.jpg" aria-label="Filme do Ferragudo Bay"><source src="../assets/video/ferragudo-bay-teaser.mp4" type="video/mp4"></video>
-            <figcaption><span>Filme · 1 min</span></figcaption>
-          </figure>
-          <figure>
-            <a href="https://www.ferragudobay.com" target="_blank" rel="noopener" aria-label="Abrir o website do Ferragudo Bay"><img src="../assets/img/fb-website.jpg" width="1280" height="594" loading="lazy" alt="Página inicial do website do Ferragudo Bay"></a>
-            <figcaption><span>Website</span><a href="https://www.ferragudobay.com" target="_blank" rel="noopener">ferragudobay.com ↗</a></figcaption>
-          </figure>
-          <figure>
-            <img src="../assets/img/fb-outdoor-local.jpg" width="1024" height="561" loading="lazy" alt="Outdoor do Ferragudo Bay instalado numa estrada de Ferragudo">
-            <figcaption><span>Outdoor, no local</span></figcaption>
-          </figure>
-          <figure>
-            <img src="../assets/img/fb-outdoor-peca.jpg" width="1528" height="594" loading="lazy" alt="Peça do outdoor do Ferragudo Bay com lista de espera e código QR">
-            <figcaption><span>Outdoor, a peça</span></figcaption>
-          </figure>
-
-          <div>
-            <span class="k">Resultado</span>
-            <p class="big">50+</p>
-            <p style="margin-top:10px">contactos de interessados nos primeiros três dias do pré-lançamento online, a 19 de setembro de 2026. O lançamento oficial é em fevereiro de 2027.</p>
-          </div>
-          <p class="meta">Ferragudo Bay · 45 frações · Sítio da Passagem, Ferragudo · Promotor Rising Stone</p>
-          <a class="more" href="../#caso"><span>Ver o caso no site</span><span>↗</span></a>
-        </div>
-      </details>
     </section>
 
     <section class="group">
