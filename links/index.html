@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Base 1 · Links</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="../favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta name="description" content="Base 1. Preparamos empreendimentos imobiliários para o mercado.">
+<style>
+@font-face{font-family:"Space Mono";font-weight:400;src:url(../assets/fonts/space-mono-400.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"Space Mono";font-weight:700;src:url(../assets/fonts/space-mono-700.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"DM Sans";font-weight:400;src:url(../assets/fonts/dm-sans-400.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"DM Sans";font-weight:500;src:url(../assets/fonts/dm-sans-500.woff2) format("woff2");font-display:swap}
+:root{--ground:#EEEEEE;--ink:#111111;--orange:#E35436;--night:#0E0E0E;--line:rgba(238,238,238,.18)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--night);color:var(--ground)}
+body{font-family:"DM Sans",system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
+.mono{font-family:"Space Mono",ui-monospace,monospace}
+.wrap{width:100%;max-width:520px;margin:0 auto;padding:0 24px}
+header{padding:56px 0 40px}
+header img{display:block;width:168px;height:auto}
+.lede{margin-top:28px;font-size:17px;line-height:1.45;max-width:30ch;color:rgba(238,238,238,.82)}
+.tag{margin-top:20px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(238,238,238,.5)}
+.label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(238,238,238,.5);padding:0 0 12px}
+ul{list-style:none;border-top:1px solid var(--line)}
+li{border-bottom:1px solid var(--line)}
+.link{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:20px 0;color:var(--ground);text-decoration:none;transition:color .15s,padding .15s}
+.link .t{font-family:"Space Mono",monospace;font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+.link .d{font-size:14px;color:rgba(238,238,238,.55);text-align:right;word-break:break-word}
+.link .a{font-family:"Space Mono",monospace;font-size:14px;color:var(--orange);flex:none}
+.link .r{display:flex;gap:12px;align-items:baseline;min-width:0}
+.link:hover,.link:focus-visible{color:var(--orange);padding-left:8px;outline:none}
+.link:hover .d{color:var(--ground)}
+.primary{background:var(--orange);color:var(--night);border:0;margin-bottom:28px}
+.primary .link{color:var(--night);padding:22px 20px}
+.primary .link .a,.primary .link .d{color:var(--night)}
+.primary .link:hover{color:var(--night);padding-left:28px}
+.group{margin-bottom:36px}
+footer{margin-top:auto;padding:40px 0 48px}
+footer p{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.08em;line-height:1.7;color:rgba(238,238,238,.45)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--ground);color:var(--ink);font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:10px 16px;opacity:0;transition:.2s;pointer-events:none}
+.toast.on{opacity:1;transform:translateX(-50%)}
+button.link{width:100%;background:none;border:0;font:inherit;cursor:pointer;text-align:left}
+.hero{background:var(--ground);color:var(--ink);position:relative}
+.hero canvas{display:block;width:100%;height:clamp(320px,92vw,480px);cursor:grab;touch-action:none;outline:none}
+.hero canvas:active{cursor:grabbing}
+.hero .hint{position:absolute;left:0;right:0;bottom:16px;font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(17,17,17,.5);pointer-events:none;transition:opacity .4s}
+.hero .hint .wrap{display:flex;justify-content:space-between}
+.hero .fallback{display:none;padding:48px 24px;justify-content:center}
+.hero .fallback svg{width:min(70vw,320px);height:auto}
+.hero.nogl canvas,.hero.nogl .hint{display:none}
+.hero.nogl .fallback{display:flex}
+</style>
+</head>
+<body>
+<section class="hero" id="hero" aria-label="Tijolo Base 1 em 3D: arraste para rodar">
+  <canvas id="brick" tabindex="0" aria-label="Tijolo Base 1 em 3D. Arraste ou use as setas para rodar."></canvas>
+  <div class="hint"><div class="wrap"><span>Arraste para rodar</span></div></div>
+  <div class="fallback"><svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 447.11 453.92">
+  <g id="Camada_1-2" data-name="Camada 1">
+    <path fill="#111111" d="M447.11,238.6v-14.44c0-8.06-2.98-14.99-7.98-19.83l.4-.4L235.58,0l-.12.12v-.03h-67.9l-.02-.02-.02.02H.5v.5h-.5v258.79h1v-1.04l195.57,195.57.71-.71L1,256.93v-58.39l195.57,195.57.35-.35v58.84h56.46c7.61,0,14.2-2.72,18.96-7.33l7.68,7.68.35-.35h56.4c7.6,0,14.17-2.71,18.93-7.3l7.65,7.65.35-.35h0s56.46,0,56.46,0c15.61,0,26.93-11.42,26.93-27.15v-17.5c0-12.09-8.75-18.17-11.35-19.71,2.58-1.69,11.35-8.45,11.35-21.85v-14.44c0-15.73-11.33-27.15-26.93-27.15,15.61,0,26.93-11.42,26.93-27.15v-17.5c0-12.09-8.75-18.17-11.35-19.71,2.58-1.69,11.35-8.45,11.35-21.85ZM196.93,253.39L1,57.46V1.8l195.57,195.57.71-.71L1.71,1.09h66.86l200.76,200.76c-4.38-3.08-9.83-4.84-15.95-4.84h-56.46v56.37ZM196.93,335.82L1,139.89v-21.74l195.57,195.57.35-.35v22.45ZM1,141.31l195.57,195.57.35-.35v44.65L1,185.25v-43.94ZM1,116.74v-45.99l195.57,195.57.35-.35v46.69L1,116.74ZM1,69.33v-10.46l195.57,195.57.35-.35v11.16L1,69.33ZM253.82,265.97c9.61,0,13.53,4.75,13.53,16.38v17.28c0,6.49-5.32,13.75-12.44,13.75h-45.68v-47.4h44.58ZM209.24,254.1v-45.43h45.69c7.33,0,12.43,7.24,12.43,13.75v15.97c0,11.16-4.24,15.72-14.62,15.72h-43.5ZM280.32,297.66v54.3c0-15.73-11.33-27.15-26.93-27.15,15.61,0,26.93-11.42,26.93-27.15ZM268.97,260.45c2.58-1.69,11.35-8.45,11.35-21.85v41.56c0-12.09-8.75-18.17-11.35-19.71ZM209.24,336.46h45.69c7.33,0,12.43,7.24,12.43,13.75v15.97c0,11.16-4.24,15.72-14.62,15.72h-43.5v-45.43ZM280.32,366.39v41.56c0-12.09-8.75-18.17-11.35-19.71,2.58-1.69,11.35-8.45,11.35-21.85ZM280.32,224.17c0-7.6-2.65-14.19-7.14-18.97l.45-.45L69.98,1.09h13.71l196.28,196.28.71-.71L85.1,1.09h66.72l200.43,200.43c-4.29-2.87-9.57-4.5-15.47-4.5h-56.46v27.15ZM337.21,265.97c9.61,0,13.53,4.75,13.53,16.38v17.28c0,6.49-5.32,13.75-12.44,13.75h-45.68v-47.4h44.58ZM292.63,254.1v-45.43h45.69c7.33,0,12.43,7.24,12.43,13.75v15.97c0,11.16-4.24,15.72-14.62,15.72h-43.5ZM363.71,297.66v54.3c0-15.73-11.33-27.15-26.93-27.15,15.61,0,26.93-11.42,26.93-27.15ZM352.36,260.45c2.58-1.69,11.35-8.45,11.35-21.85v41.56c0-12.09-8.75-18.17-11.35-19.71ZM292.63,336.46h45.69c7.33,0,12.43,7.24,12.43,13.75v15.97c0,11.16-4.24,15.72-14.62,15.72h-43.5v-45.43ZM363.71,366.39v41.56c0-12.09-8.75-18.17-11.35-19.71,2.58-1.69,11.35-8.45,11.35-21.85ZM355.71,204.32l.38-.38L153.23,1.09h13.91l196.25,196.25.32-.32v27.15c0-8.07-2.99-15.01-8-19.85ZM1,197.12v-10.46l195.57,195.57.35-.35v11.16L1,197.12ZM254.92,441.16h-45.68v-47.4h44.58c9.61,0,13.53,4.75,13.53,16.38v17.28c0,6.49-5.32,13.75-12.44,13.75ZM273.05,444.56c4.57-4.8,7.27-11.44,7.27-19.11v26.38l-7.27-7.27ZM338.31,441.16h-45.68v-47.4h44.58c9.61,0,13.53,4.75,13.53,16.38v17.28c0,6.49-5.32,13.75-12.44,13.75ZM356.41,444.59c4.59-4.8,7.3-11.45,7.3-19.14v26.44l-7.3-7.3ZM434.14,427.41c0,6.49-5.32,13.75-12.44,13.75h-45.68v-47.4h44.58c9.61,0,13.53,4.75,13.53,16.38v17.28ZM421.71,336.46c7.33,0,12.43,7.24,12.43,13.75v15.97c0,11.16-4.24,15.72-14.62,15.72h-43.5v-45.43h45.69ZM434.14,299.62c0,6.49-5.32,13.75-12.44,13.75h-45.68v-47.4h44.58c9.61,0,13.53,4.75,13.53,16.38v17.28ZM434.14,238.38c0,11.16-4.24,15.72-14.62,15.72h-43.5v-45.43h45.69c7.33,0,12.43,7.24,12.43,13.75v15.97ZM420.17,197.02h-56.46l.39-.39L168.56,1.09h66.7l200.53,200.53c-4.32-2.93-9.65-4.6-15.61-4.6Z"/>
+  </g>
+</svg></div>
+</section>
+<div class="wrap">
+  <header>
+    <img src="../assets/img/base1-logo-orange.png" alt="Base 1" width="499" height="127">
+    <p class="lede">Preparamos empreendimentos imobiliários para o mercado: marca, conteúdo e ativos de venda.</p>
+    <p class="tag mono">Trabalhamos de Braga a Portimão</p>
+  </header>
+
+  <main>
+    <div class="primary">
+      <a class="link" href="https://wa.me/351966180200" target="_blank" rel="noopener">
+        <span class="t">Falar no WhatsApp</span><span class="a">↗</span>
+      </a>
+    </div>
+
+    <section class="group">
+      <p class="label mono">Site</p>
+      <ul>
+        <li><a class="link" href="../"><span class="t">Ver o site</span><span class="a">↗</span></a></li>
+        <li><a class="link" href="../#caso"><span class="t">Caso Ferragudo Bay</span><span class="a">↗</span></a></li>
+        <li><a class="link" href="../#metodo"><span class="t">Como trabalhamos</span><span class="a">↗</span></a></li>
+        <li><a class="link" href="../#equipa"><span class="t">Equipa</span><span class="a">↗</span></a></li>
+      </ul>
+    </section>
+
+    <section class="group">
+      <p class="label mono">Contacto</p>
+      <ul>
+        <li><a class="link" href="mailto:base1portugal@gmail.com" data-copy="base1portugal@gmail.com"><span class="t">Email</span><span class="r"><span class="d">base1portugal@gmail.com</span><span class="a">→</span></span></a></li>
+        <li><a class="link" href="tel:+351966180200" data-copy="+351 966 180 200"><span class="t">Telefone</span><span class="r"><span class="d">+351 966 180 200</span><span class="a">→</span></span></a></li>
+        <li><a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Te%C3%B3filo+de+Braga+9+8500-668+Portim%C3%A3o" target="_blank" rel="noopener"><span class="t">Morada</span><span class="r"><span class="d">Rua Teófilo de Braga, 9<br>8500-668 Portimão</span><span class="a">↗</span></span></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Respondemos em vinte e quatro horas.<br>© 2026 Base 1</p>
+  </footer>
+</div>
+<div class="toast" id="toast">Copiado</div>
+<script>
+// mailto/tel nem sempre abrem dentro de apps (ex.: browser do Instagram); copia o contacto como apoio.
+document.querySelectorAll('[data-copy]').forEach(function(a){
+  a.addEventListener('click',function(){
+    var v=a.getAttribute('data-copy');
+    try{navigator.clipboard.writeText(v).then(function(){
+      var t=document.getElementById('toast');t.textContent='Copiado: '+v;t.classList.add('on');
+      setTimeout(function(){t.classList.remove('on')},1800);
+    }).catch(function(){});}catch(e){}
+  });
+});
+</script>
+<script src="../assets/js/three.min.js"></script>
+<script src="../assets/js/tijolo.js"></script>
+</body>
+</html>
