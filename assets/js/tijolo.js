@@ -3,7 +3,7 @@ var hero=document.getElementById('hero'),canvas=document.getElementById('brick')
 if(!window.THREE){hero.classList.add('nogl');return;}
 var renderer;
 try{renderer=new THREE.WebGLRenderer({canvas:canvas,antialias:false,alpha:false});}catch(e){hero.classList.add('nogl');return;}
-var GROUND=0xFFFFFF,INK=0x111111;
+var GROUND=0xFFFFFF,INK=0xE35436; // cor do tijolo: laranja Base 1
 renderer.setClearColor(GROUND,1);
 
 // Perfil do tijolo: 3 x 2 letras B, medidas tiradas do SVG original (unidades do SVG, y para baixo).
