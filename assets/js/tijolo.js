@@ -47,7 +47,7 @@ function brickShape(){
   }
   return s;
 }
-var DEPTH=290;
+var DEPTH=387; // comprimento do tijolo (era 290, +1/3)
 var geo=new THREE.ExtrudeGeometry(brickShape(),{depth:DEPTH,bevelEnabled:false,curveSegments:18});
 var capMat=new THREE.MeshBasicMaterial({color:INK}),sideMat=new THREE.MeshBasicMaterial({color:GROUND});
 var brick=new THREE.Group(),inner=new THREE.Mesh(geo,[capMat,sideMat]);
@@ -113,7 +113,7 @@ function resize(){
   renderer.setPixelRatio(dpr);renderer.setSize(w,h,false);
   var W=Math.round(w*dpr),H=Math.round(h*dpr);rtColor.setSize(W,H);rtNorm.setSize(W,H);
   post.uniforms.px.value.set(1/W,1/H);
-  var half=2.45,a=w/h;
+  var half=2.85,a=w/h;
   if(a>=1){cam.left=-half*a;cam.right=half*a;cam.top=half;cam.bottom=-half;}
   else{cam.left=-half;cam.right=half;cam.top=half/a;cam.bottom=-half/a;}
   cam.updateProjectionMatrix();stripWidth();
