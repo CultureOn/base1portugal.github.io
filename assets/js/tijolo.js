@@ -3,7 +3,7 @@ var hero=document.getElementById('hero'),canvas=document.getElementById('brick')
 if(!window.THREE){hero.classList.add('nogl');return;}
 var renderer;
 try{renderer=new THREE.WebGLRenderer({canvas:canvas,antialias:false,alpha:false});}catch(e){hero.classList.add('nogl');return;}
-var GROUND=0xEEEEEE,INK=0x111111;
+var GROUND=0xFFFFFF,INK=0x111111;
 renderer.setClearColor(GROUND,1);
 
 // Perfil do tijolo: 3 x 2 letras B, medidas tiradas do SVG original (unidades do SVG, y para baixo).
@@ -53,6 +53,20 @@ var capMat=new THREE.MeshBasicMaterial({color:INK}),sideMat=new THREE.MeshBasicM
 var brick=new THREE.Group(),inner=new THREE.Mesh(geo,[capMat,sideMat]);
 inner.position.set(-TW/2,TH/2,-DEPTH/2);
 brick.add(inner);brick.scale.setScalar(0.01);
+// Linhas na face lateral, como no desenho original: ao nível dos miolos de cada B e da junta entre linhas
+var LINE_Y=[57.08,68.95,116.36,127.79,139.44,184.87,196.74];
+var lineMat=new THREE.MeshBasicMaterial({color:INK,side:THREE.DoubleSide});
+var strips=[];
+LINE_Y.forEach(function(y){
+  var g=new THREE.PlaneGeometry(DEPTH,1);
+  var m=new THREE.Mesh(g,lineMat);
+  m.rotation.y=Math.PI/2;                // plano vertical, ao longo da profundidade
+  m.position.set(-0.6,-y,DEPTH/2);       // encostado à face esquerda (x=0), um pouco por fora
+  inner.add(m);strips.push(m);
+});
+var LINE_PX=1.1; // espessura das linhas em px de ecrã
+function stripWidth(){var hPx=canvas.clientHeight,units=(cam.top-cam.bottom)/0.01;var w=LINE_PX*units/hPx;strips.forEach(function(m){m.scale.y=w;});}
+
 var scene=new THREE.Scene();scene.add(brick);
 
 var cam=new THREE.OrthographicCamera(-1,1,1,-1,0.1,50);cam.position.set(0,0,10);
@@ -102,7 +116,7 @@ function resize(){
   var half=2.45,a=w/h;
   if(a>=1){cam.left=-half*a;cam.right=half*a;cam.top=half;cam.bottom=-half;}
   else{cam.left=-half;cam.right=half;cam.top=half/a;cam.bottom=-half/a;}
-  cam.updateProjectionMatrix();
+  cam.updateProjectionMatrix();stripWidth();
 }
 
 // Posição inicial parecida com o desenho: vê-se a frente, o topo e o lado esquerdo

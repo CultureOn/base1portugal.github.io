@@ -13,34 +13,30 @@
 @font-face{font-family:"Space Mono";font-weight:700;src:url(../assets/fonts/space-mono-700.woff2) format("woff2");font-display:swap}
 @font-face{font-family:"DM Sans";font-weight:400;src:url(../assets/fonts/dm-sans-400.woff2) format("woff2");font-display:swap}
 @font-face{font-family:"DM Sans";font-weight:500;src:url(../assets/fonts/dm-sans-500.woff2) format("woff2");font-display:swap}
-:root{--ground:#EEEEEE;--ink:#111111;--orange:#E35436;--night:#0E0E0E;--line:rgba(238,238,238,.18)}
+:root{--ground:#FFFFFF;--ink:#111111;--orange:#E35436;--line:rgba(17,17,17,.14)}
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{background:var(--night);color:var(--ground)}
+html,body{background:#FFFFFF;color:var(--ink)}
 body{font-family:"DM Sans",system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
 .mono{font-family:"Space Mono",ui-monospace,monospace}
 .wrap{width:100%;max-width:520px;margin:0 auto;padding:0 24px}
 header{padding:56px 0 40px}
 header img{display:block;width:168px;height:auto}
-.lede{margin-top:28px;font-size:17px;line-height:1.45;max-width:30ch;color:rgba(238,238,238,.82)}
-.tag{margin-top:20px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(238,238,238,.5)}
-.label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(238,238,238,.5);padding:0 0 12px}
+.lede{margin-top:28px;font-size:17px;line-height:1.45;max-width:30ch;color:rgba(17,17,17,.78)}
+.tag{margin-top:20px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(17,17,17,.5)}
+.label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(17,17,17,.5);padding:0 0 12px}
 ul{list-style:none;border-top:1px solid var(--line)}
 li{border-bottom:1px solid var(--line)}
-.link{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:20px 0;color:var(--ground);text-decoration:none;transition:color .15s,padding .15s}
+.link{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:20px 0;color:var(--ink);text-decoration:none;transition:color .15s,padding .15s}
 .link .t{font-family:"Space Mono",monospace;font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
-.link .d{font-size:14px;color:rgba(238,238,238,.55);text-align:right;word-break:break-word}
+.link .d{font-size:14px;color:rgba(17,17,17,.55);text-align:right;word-break:break-word}
 .link .a{font-family:"Space Mono",monospace;font-size:14px;color:var(--orange);flex:none}
 .link .r{display:flex;gap:12px;align-items:baseline;min-width:0}
 .link:hover,.link:focus-visible{color:var(--orange);padding-left:8px;outline:none}
-.link:hover .d{color:var(--ground)}
-.primary{background:var(--orange);color:var(--night);border:0;margin-bottom:28px}
-.primary .link{color:var(--night);padding:22px 20px}
-.primary .link .a,.primary .link .d{color:var(--night)}
-.primary .link:hover{color:var(--night);padding-left:28px}
+.link:hover .d{color:var(--ink)}
 .group{margin-bottom:36px}
 footer{margin-top:auto;padding:40px 0 48px}
-footer p{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.08em;line-height:1.7;color:rgba(238,238,238,.45)}
-.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--ground);color:var(--ink);font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:10px 16px;opacity:0;transition:.2s;pointer-events:none}
+footer p{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.08em;line-height:1.7;color:rgba(17,17,17,.45)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#FFFFFF;font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:10px 16px;opacity:0;transition:.2s;pointer-events:none}
 .toast.on{opacity:1;transform:translateX(-50%)}
 button.link{width:100%;background:none;border:0;font:inherit;cursor:pointer;text-align:left}
 .hero{background:var(--ground);color:var(--ink);position:relative}
@@ -65,18 +61,13 @@ button.link{width:100%;background:none;border:0;font:inherit;cursor:pointer;text
 </svg></div>
 </section>
 <div class="wrap">
-  <header>
-    <img src="../assets/img/base1-logo-orange.png" alt="Base 1" width="499" height="127">
+  <header style="padding-top:24px">
+    <img src="../assets/img/base1-logo-black.png" alt="Base 1" width="499" height="127">
     <p class="lede">Preparamos empreendimentos imobiliários para o mercado: marca, conteúdo e ativos de venda.</p>
-    <p class="tag mono">Trabalhamos de Braga a Portimão</p>
+    <p class="tag mono">Do Algarve para o mundo</p>
   </header>
 
   <main>
-    <div class="primary">
-      <a class="link" href="https://wa.me/351966180200" target="_blank" rel="noopener">
-        <span class="t">Falar no WhatsApp</span><span class="a">↗</span>
-      </a>
-    </div>
 
     <section class="group">
       <p class="label mono">Site</p>
