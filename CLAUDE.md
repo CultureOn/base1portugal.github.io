@@ -1,6 +1,6 @@
 # Site da Base 1 · guia para editar com o Claude
 
-Landing page da Base 1, uma agência que prepara empreendimentos imobiliários para o mercado. É um site estático (HTML e CSS, sem build) publicado pelo GitHub Pages a partir do ramo `main`. O que chega ao `main` fica no ar em 1 a 2 minutos em https://cultureon.github.io/base1portugal.github.io/
+Landing page da Base 1, uma agência que prepara empreendimentos imobiliários para o mercado. É um site estático (HTML e CSS, sem build) publicado pelo GitHub Pages a partir do ramo `main`. O que chega ao `main` fica no ar em 1 a 2 minutos em https://base1.pt (domínio ligado pelo ficheiro `CNAME`; o DNS é gerido na Cloudflare, com os registos em "DNS only").
 
 Este ficheiro é público, como o resto do repositório e do site. Não pôr aqui informação interna (preços, fees, dados de clientes).
 
@@ -51,12 +51,12 @@ Este ficheiro é público, como o resto do repositório e do site. Não pôr aqu
 - Sempre que mudar o `assets/site.css`, atualizar o `?v=` no `<link>` do `index.html` (por exemplo, a data do dia). Sem isso, os browsers podem mostrar o HTML novo com o CSS antigo durante uns minutos.
 - Ver a página a 1440 px e a 390 px de largura antes de dar por terminado: nada pode sair do ecrã na horizontal e o texto não pode ficar cortado.
 - Imagens novas em JPG, até cerca de 2000 px de largura e abaixo de cerca de 400 KB, sempre com `width`, `height` e `alt` no `<img>`. Por baixo da primeira dobra, `loading="lazy"`.
-- Manter `<meta name="robots" content="noindex">` enquanto o site estiver no endereço github.io.
+- Não apagar o ficheiro `CNAME`. `robots.txt` e `sitemap.xml` na raiz: acrescentar ao sitemap qualquer página nova.
 - Publicar: só o que chega ao `main` vai para o ar. Se o trabalho for feito noutro ramo, abrir um pull request e fazer merge para o `main` quando estiver aprovado.
 
 ## Pendentes técnicos
 
-- Domínio base1.pt: quando existir, criar o ficheiro `CNAME`, configurar os registos DNS, tirar o `noindex`, acrescentar `sitemap.xml` e `robots.txt`, atualizar o endereço de `og:image` e passar as imagens a WebP.
+- Passar as imagens a WebP.
 - Email no domínio, para substituir `base1portugal@gmail.com` em todo o site.
 - Página de política de privacidade e identificação legal no rodapé (denominação social, sede, NIPC).
 - Confirmar que o número de telefone tem WhatsApp (há dois links `wa.me`).
