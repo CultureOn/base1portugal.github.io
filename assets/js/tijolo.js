@@ -64,6 +64,7 @@ LINE_Y.forEach(function(y){
   m.position.set(-0.6,-y,DEPTH/2);       // encostado à face esquerda (x=0), um pouco por fora
   inner.add(m);strips.push(m);
 });
+var LEFT=new THREE.Vector3();
 var LINE_PX=1.1; // espessura das linhas em px de ecrã
 function stripWidth(){var hPx=canvas.clientHeight,units=(cam.top-cam.bottom)/0.01;var w=LINE_PX*units/hPx;strips.forEach(function(m){m.scale.y=w;});}
 
@@ -97,11 +98,13 @@ var post=new THREE.ShaderMaterial({
   'float e(vec4 a,vec4 b){',
   ' float ia=step(0.001,a.w),ib=step(0.001,b.w);',
   ' if(ia!=ib) return 1.0; if(ia<0.5) return 0.0;',
-  ' if(dot(normalize(a.xyz),normalize(b.xyz))<0.82) return 1.0;',
-  ' if(abs(a.w-b.w)>0.09) return 1.0; return 0.0;}',
-  'void main(){vec4 n=N(vUv);float k=0.0;',
-  ' k=max(k,e(n,N(vUv+vec2(px.x,0.0))));k=max(k,e(n,N(vUv-vec2(px.x,0.0))));',
-  ' k=max(k,e(n,N(vUv+vec2(0.0,px.y))));k=max(k,e(n,N(vUv-vec2(0.0,px.y))));',
+  ' if(dot(normalize(a.xyz),normalize(b.xyz))<0.82) return 1.0; return 0.0;}',
+  // profundidade: usa a segunda derivada, que é zero numa face plana mesmo quando está quase de perfil
+  'float dz(vec4 l,vec4 c,vec4 r){if(l.w<0.001||c.w<0.001||r.w<0.001)return 0.0;return step(0.035,abs(l.w+r.w-2.0*c.w));}',
+  'void main(){vec4 n=N(vUv);',
+  ' vec4 nr=N(vUv+vec2(px.x,0.0)),nl=N(vUv-vec2(px.x,0.0)),nu=N(vUv+vec2(0.0,px.y)),nd=N(vUv-vec2(0.0,px.y));',
+  ' float k=max(max(e(n,nr),e(n,nl)),max(e(n,nu),e(n,nd)));',
+  ' k=max(k,max(dz(nl,n,nr),dz(nd,n,nu)));',
   ' vec3 c=Cc(vUv); gl_FragColor=vec4(mix(c,ink,k),1.0);}'
   ].join('\n'),depthTest:false,depthWrite:false
 });
@@ -141,6 +144,8 @@ function frame(t){
     if(vel.lengthSq()>0.01){rot(vel.x*dt,vel.y*dt);vel.multiplyScalar(Math.pow(0.94,dt));}
     else if(!reduce){idle+=dt;if(idle>90){Q.setFromAxisAngle(new THREE.Vector3(0,1,0),0.0035*dt*Math.min(1,(idle-90)/60));brick.quaternion.premultiply(Q);}}
   }
+  // linhas laterais só quando a face esquerda está bem à vista
+  LEFT.set(-1,0,0).applyQuaternion(brick.quaternion);var show=LEFT.z>0.22;strips.forEach(function(m){m.visible=show;});
   renderer.setRenderTarget(rtColor);renderer.clear();renderer.render(scene,cam);
   scene.overrideMaterial=normMat;renderer.setClearColor(0x000000,0);
   renderer.setRenderTarget(rtNorm);renderer.clear();renderer.render(scene,cam);
