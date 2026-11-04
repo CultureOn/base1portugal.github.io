@@ -27,6 +27,10 @@ Este ficheiro é público, como o resto do repositório e do site. Não pôr aqu
 8. 05 · Equipa (`#equipa`): Cristian, Rafael, Justino, Vagas, por esta ordem.
 9. 06 · Contacto (`#contacto`, fundo laranja) e rodapé.
 
+## Contactos
+
+- Email: `geral@base1.pt` (no topo, no convite depois do caso, no contacto, na página `/links` e nos dados estruturados do `<head>`). Telefone: +351 966 180 200.
+
 ## Identidade
 
 - Letras: Space Mono nos títulos (caixa alta, classe `.caps`), etiquetas, números e contactos. DM Sans no corpo de texto e nos subtítulos. A lista de elementos em Space Mono está no `site.css`, logo antes de `.caps`.
@@ -57,6 +61,5 @@ Este ficheiro é público, como o resto do repositório e do site. Não pôr aqu
 ## Pendentes técnicos
 
 - Passar as imagens a WebP.
-- Email no domínio, para substituir `base1portugal@gmail.com` em todo o site.
 - Página de política de privacidade e identificação legal no rodapé (denominação social, sede, NIPC).
 - Confirmar que o número de telefone tem WhatsApp (há dois links `wa.me`).
