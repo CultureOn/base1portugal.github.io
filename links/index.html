@@ -83,7 +83,6 @@ button.link{width:100%;background:none;border:0;font:inherit;cursor:pointer;text
       <p class="label mono">Contacto</p>
       <ul>
         <li><a class="link" href="mailto:geral@base1.pt" data-copy="geral@base1.pt"><span class="t">Email</span><span class="r"><span class="d">geral@base1.pt</span><span class="a">→</span></span></a></li>
-        <li><a class="link" href="tel:+351966180200" data-copy="+351 966 180 200"><span class="t">Telefone</span><span class="r"><span class="d">+351 966 180 200</span><span class="a">→</span></span></a></li>
         <li><a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Te%C3%B3filo+de+Braga+9+8500-668+Portim%C3%A3o" target="_blank" rel="noopener"><span class="t">Morada</span><span class="r"><span class="d">Rua Teófilo de Braga, 9<br>8500-668 Portimão</span><span class="a">↗</span></span></a></li>
       </ul>
     </section>
@@ -95,7 +94,7 @@ button.link{width:100%;background:none;border:0;font:inherit;cursor:pointer;text
 </div>
 <div class="toast" id="toast">Copiado</div>
 <script>
-// mailto/tel nem sempre abrem dentro de apps (ex.: browser do Instagram); copia o contacto como apoio.
+// mailto nem sempre abrem dentro de apps (ex.: browser do Instagram); copia o contacto como apoio.
 document.querySelectorAll('[data-copy]').forEach(function(a){
   a.addEventListener('click',function(){
     var v=a.getAttribute('data-copy');
